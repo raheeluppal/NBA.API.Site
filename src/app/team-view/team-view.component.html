@@ -1,0 +1,11 @@
+<div class="mat-app-background basic-container">
+    <mat-form-field>
+      <mat-label>Select a Team</mat-label>
+      <mat-select [(value)]="selected" (selectionChange)="select()">
+        <mat-option value=1>Hawks</mat-option>
+        <mat-option value=2>Celtics</mat-option>
+        <mat-option value=3>Nets</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-list> <mat-list-item *ngFor = "let player of team"> {{player.first_name}} {{player.last_name}}  </mat-list-item></mat-list>
+    </div>
